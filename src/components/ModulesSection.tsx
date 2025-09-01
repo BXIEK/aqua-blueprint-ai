@@ -72,10 +72,11 @@ const ModulesSection = () => {
       image: financialAnalysisImage,
       inputs: [
         "Dados das alternativas técnicas dos Módulos 1, 2 e 3",
-        "Tabelas de preços unitários (SINAPI, SICRO)",
+        "Tabelas de preços unitários (SINAPI, SICRO, EMBASA, ORSE)",
         "Dados de mercado local de materiais e mão de obra",
-        "Fontes de financiamento disponíveis",
-        "Tarifas praticadas na região"
+        "Fontes de financiamento disponíveis (FUNASA, BNDES, etc.)",
+        "Tarifas praticadas na região e marco regulatório",
+        "Composições de preços específicas para saneamento"
       ],
       outputs: [
         "Orçamento detalhado por módulo e alternativa",
@@ -84,7 +85,7 @@ const ModulesSection = () => {
         "Estudo tarifário e sustentabilidade financeira",
         "Relatório de comparação custo-benefício"
       ],
-      process: "A IA calcula custos detalhados usando bases de preços atualizadas, analisa viabilidade através de indicadores como VPL e TIR, simula cenários de financiamento e projeta sustentabilidade tarifária do sistema ao longo de sua vida útil."
+      process: "A IA integra múltiplas bases de preços (SINAPI, SICRO, EMBASA, ORSE) para calcular custos precisos, analisa viabilidade através de indicadores econômicos como VPL e TIR, simula cenários de financiamento com diferentes fontes e projeta sustentabilidade tarifária considerando o marco regulatório do saneamento."
     }
   ];
 
