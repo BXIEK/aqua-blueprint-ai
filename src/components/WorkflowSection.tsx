@@ -1,4 +1,4 @@
-import { ArrowRight, Database, Cpu, FileText } from "lucide-react";
+import { ArrowRight, Database, Cpu, FileText, DollarSign } from "lucide-react";
 
 const WorkflowSection = () => {
   const steps = [
@@ -15,10 +15,16 @@ const WorkflowSection = () => {
       color: "water-blue"
     },
     {
+      icon: DollarSign,
+      title: "Análise Financeira",
+      description: "Viabilidade econômica, orçamento detalhado e cronograma financeiro",
+      color: "eco-green"
+    },
+    {
       icon: FileText,
       title: "Projeto Integrado",
       description: "Concepção completa com alternativas, custos e especificações técnicas",
-      color: "eco-green"
+      color: "water-blue"
     }
   ];
 
@@ -54,7 +60,8 @@ const WorkflowSection = () => {
           
           {/* Connecting Arrows */}
           <div className="hidden md:block absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
-            <div className="flex items-center space-x-32">
+            <div className="flex items-center space-x-20">
+              <ArrowRight className="w-8 h-8 text-water-blue/40" />
               <ArrowRight className="w-8 h-8 text-water-blue/40" />
               <ArrowRight className="w-8 h-8 text-water-blue/40" />
             </div>
@@ -65,7 +72,7 @@ const WorkflowSection = () => {
         <div className="text-center mt-16">
           <div className="inline-block bg-gradient-water text-white px-8 py-4 rounded-2xl shadow-hero">
             <h3 className="text-xl font-semibold mb-2">Resultado Final</h3>
-            <p className="text-white/90">Projeto de Concepção Dinâmico e Integrado com análise de alternativas e estimativas de custo</p>
+            <p className="text-white/90">Projeto de Concepção Dinâmico e Integrado com análise técnica, econômica e cronograma completo para execução</p>
           </div>
         </div>
       </div>

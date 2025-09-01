@@ -33,7 +33,7 @@ const Hero = () => {
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
           Transforme dados fragmentados em projetos de concepção completos para 
-          abastecimento de água e esgotamento sanitário através de inteligência artificial avançada.
+          abastecimento de água e esgotamento sanitário com análise econômica integrada através de inteligência artificial avançada.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">

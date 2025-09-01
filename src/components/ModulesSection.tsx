@@ -2,6 +2,7 @@ import ModuleCard from "./ModuleCard";
 import populationStudyImage from "@/assets/population-study.jpg";
 import waterSupplyImage from "@/assets/water-supply-system.jpg";
 import sewageSystemImage from "@/assets/sewage-system.jpg";
+import financialAnalysisImage from "@/assets/financial-analysis.jpg";
 
 const ModulesSection = () => {
   const modules = [
@@ -63,6 +64,27 @@ const ModulesSection = () => {
         "Mapa conceitual do sistema completo"
       ],
       process: "Usa topografia para delimitar bacias de coleta por gravidade. Busca pontos baixos seguros para ETE considerando solo, distância urbana e corpo receptor. Indica elevatórias onde gravidade não é viável."
+    },
+    {
+      moduleNumber: 4,
+      title: "Estudo de Viabilidade Econômica e Orçamento",
+      description: "Análise financeira completa do projeto incluindo viabilidade econômica, orçamento detalhado e cronograma financeiro para execução das obras.",
+      image: financialAnalysisImage,
+      inputs: [
+        "Dados das alternativas técnicas dos Módulos 1, 2 e 3",
+        "Tabelas de preços unitários (SINAPI, SICRO)",
+        "Dados de mercado local de materiais e mão de obra",
+        "Fontes de financiamento disponíveis",
+        "Tarifas praticadas na região"
+      ],
+      outputs: [
+        "Orçamento detalhado por módulo e alternativa",
+        "Análise de viabilidade econômica-financeira",
+        "Cronograma físico-financeiro da obra",
+        "Estudo tarifário e sustentabilidade financeira",
+        "Relatório de comparação custo-benefício"
+      ],
+      process: "A IA calcula custos detalhados usando bases de preços atualizadas, analisa viabilidade através de indicadores como VPL e TIR, simula cenários de financiamento e projeta sustentabilidade tarifária do sistema ao longo de sua vida útil."
     }
   ];
 
@@ -71,10 +93,10 @@ const ModulesSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-tech-gray mb-6">
-            Os Três Módulos do SAC
+            Os Quatro Módulos do SAC
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Cada módulo trabalha de forma integrada para criar um projeto de concepção completo e otimizado
+            Cada módulo trabalha de forma integrada para criar um projeto de concepção completo, técnico e economicamente viável
           </p>
         </div>
         
