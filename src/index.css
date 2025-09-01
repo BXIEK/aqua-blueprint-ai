@@ -9,32 +9,50 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 10% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 10% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 10% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 195 85% 45%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 210 10% 15%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 160 85% 45%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 195 85% 45%;
+
+    /* SAC Design System */
+    --water-blue: 195 85% 45%;
+    --water-blue-light: 195 85% 65%;
+    --water-blue-dark: 195 85% 25%;
+    --eco-green: 160 85% 45%;
+    --eco-green-light: 160 85% 65%;
+    --tech-gray: 210 10% 15%;
+    --light-gray: 210 20% 95%;
+    
+    --gradient-water: linear-gradient(135deg, hsl(var(--water-blue)), hsl(var(--eco-green)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--water-blue-dark)), hsl(var(--water-blue)));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(0 0% 98% / 0.8));
+    
+    --shadow-card: 0 4px 24px hsl(var(--water-blue) / 0.1);
+    --shadow-hero: 0 8px 32px hsl(var(--water-blue) / 0.3);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 

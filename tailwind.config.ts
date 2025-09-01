@@ -52,6 +52,19 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// SAC Design System Colors
+				water: {
+					blue: 'hsl(var(--water-blue))',
+					'blue-light': 'hsl(var(--water-blue-light))',
+					'blue-dark': 'hsl(var(--water-blue-dark))'
+				},
+				eco: {
+					green: 'hsl(var(--eco-green))',
+					'green-light': 'hsl(var(--eco-green-light))'
+				},
+				tech: {
+					gray: 'hsl(var(--tech-gray))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +80,18 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-water': 'var(--gradient-water)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'hero': 'var(--shadow-hero)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)'
 			},
 			keyframes: {
 				'accordion-down': {
