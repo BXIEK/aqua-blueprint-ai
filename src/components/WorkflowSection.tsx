@@ -40,7 +40,7 @@ const WorkflowSection = () => {
             {steps.map((step, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-8">
-                  <div className={`inline-flex items-center justify-center w-20 h-20 bg-${step.color} rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300 ${step.color === 'eco-green' ? 'bg-eco-green' : 'bg-water-blue'}`}>
                     <step.icon className="w-10 h-10 text-white" />
                   </div>
                   <div className="absolute -inset-4 bg-gradient-to-r from-transparent via-white/50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
